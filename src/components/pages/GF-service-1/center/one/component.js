@@ -8,6 +8,7 @@ import Map from './map';
 
 const One = () => {
 	const [localization, setLocalization] = useState('');
+	const [types, setTypes] = useState([]);
 	return (
 		<>
 			<Grid item xs={4}>
@@ -16,7 +17,7 @@ const One = () => {
 					localization={localization}
 					setLocalization={setLocalization}
 				/>
-				<Type />
+				<Type types={types} setTypes={setTypes} />
 			</Grid>
 			<Grid item xs={8}>
 				<Map />
