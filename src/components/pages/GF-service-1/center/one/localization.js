@@ -1,30 +1,25 @@
 import React from 'react';
+import TextField from '@mui/material/TextField';
 
-const Localization = () => (
+const Localization = ({ localization, setLocalization }) => (
 	<div
 		style={{
-			paddingLeft: '0.8rem',
+			padding: '0.8rem',
 			border: 'double',
 			borderRadius: '25px',
 			borderColor: '#65b2c7',
 			marginBottom: '1em',
 		}}
 	>
-		<p>
-			<label
-				style={{
-					color: 'black',
-					fontWeight: 'bold',
-					fontSize: 'medium',
-				}}
-			>
-				Enter you Location
-			</label>
-			<input
-				placeholder="Address, City"
-				style={{ height: '30px', width: '80%' }}
-			/>
-		</p>
+		<TextField
+			id="adress"
+			label="Enter your Location"
+			variant="outlined"
+			onChange={(e) => setLocalization(e.target.value)}
+			InputLabelProps={{
+				shrink: true,
+			}}
+		/>
 	</div>
 );
 
