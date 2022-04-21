@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gf-pilot-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gf-pilot-client
+  template:
+    metadata:
+      labels:
+        app: gf-pilot-client
+    spec:
+      containers:
+        - name: gf-pilot-client
+          image: interstat/gf-pilot-client:main
+          imagePullPolicy: Always
+          env:
+            - name: REACT_APP_GF_REPO_URL
+              value: ''
+            - name: REACT_APP_NUTS3_REPO_URL
+              value: ''
