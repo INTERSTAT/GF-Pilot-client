@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid';
 import 'leaflet/dist/leaflet.css';
 import Title from 'components/common/title';
 import Localization from './localization';
-import Type from './type';
+import Types from './types';
 import Map from './map';
 
 const One = () => {
@@ -17,7 +17,7 @@ const One = () => {
 					localization={localization}
 					setLocalization={setLocalization}
 				/>
-				<Type types={types} setTypes={setTypes} />
+				<Types types={types} setTypes={setTypes} />
 			</Grid>
 			<Grid item xs={8}>
 				<Map />

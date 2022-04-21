@@ -1,1 +1,1 @@
-export * from './nuts-pop';
+export * from './cultural';

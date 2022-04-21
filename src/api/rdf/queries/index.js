@@ -1,2 +1,1 @@
-export { nutsPop } from './nuts-pop';
-export { nutsPop2 } from './nuts-pop2';
+export { culturalTypes } from './cultural-types';

@@ -4,15 +4,7 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 
-const Types = ({
-	listTypes = [
-		{ value: 'A', label: 'Static 1' },
-		{ value: 'B', label: 'Static 2' },
-		{ value: 'C', label: 'Static 3' },
-	],
-	types,
-	setTypes,
-}) => {
+const Types = ({ listTypes = [], types, setTypes }) => {
 	const handleChange = (e) => {
 		if (types.includes(e)) {
 			setTypes((t) => t.filter((a) => a !== e));
