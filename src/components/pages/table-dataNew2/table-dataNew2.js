@@ -3,7 +3,6 @@ import DataTable from 'react-data-table-component';
 import Loader from 'components/common/loader';
 import Error from 'components/common/error';
 import { useFetch } from 'api';
-import { GET_NUTS_POP } from 'api/constants';
 import { GET_NUTS_POP2 } from 'api/constants';
 import { sparqlDataToTable } from 'utils';
 

@@ -68,18 +68,18 @@ const optionsMunicipalityI = [
 	{ value: '', label: 'IT110' },
 ];
 
-const optionsAgeGroups = [
-	{ value: '', label: 'Y0-4' },
-	{ value: '', label: 'Y5-9' },
-	{ value: '', label: 'Y10-14' },
-	{ value: '', label: 'Y15-19' },
-	{ value: '', label: 'Y20-24' },
-	{ value: '', label: 'Y25-29' },
-	{ value: '', label: 'Y30-34' },
-	{ value: '', label: 'Y35-39' },
-	{ value: '', label: 'Y40-44' },
-	{ value: '', label: 'Y45-49' },
-];
+// const optionsAgeGroups = [
+// 	{ value: '', label: 'Y0-4' },
+// 	{ value: '', label: 'Y5-9' },
+// 	{ value: '', label: 'Y10-14' },
+// 	{ value: '', label: 'Y15-19' },
+// 	{ value: '', label: 'Y20-24' },
+// 	{ value: '', label: 'Y25-29' },
+// 	{ value: '', label: 'Y30-34' },
+// 	{ value: '', label: 'Y35-39' },
+// 	{ value: '', label: 'Y40-44' },
+// 	{ value: '', label: 'Y45-49' },
+// ];
 
 const Service3 = () => (
 	<Grid container spacing={2}>

@@ -1,1 +1,1 @@
-export { default } from './service1';
+export { default } from './service2.js';
