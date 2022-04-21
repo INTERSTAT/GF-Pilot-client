@@ -8,7 +8,6 @@ const TablePageNew = () => (
 	<Paper>
 		<Table />
 	</Paper>
-
 );
 
 export default TablePageNew;

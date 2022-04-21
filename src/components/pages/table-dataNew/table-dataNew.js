@@ -14,28 +14,28 @@ const customStyles = {
 	  }
 	},*/
 	rows: {
-	  style: { 
-		minHeight: '10px', 
-	  }
+		style: {
+			minHeight: '10px',
+		},
 	},
 	headCells: {
-	  style: {
-		fontSize: '15px',
-		fontWeight: '10',
-		textTransform: 'uppercase',
-		paddingLeft: '0 8px'
-	  },
+		style: {
+			fontSize: '15px',
+			fontWeight: '10',
+			textTransform: 'uppercase',
+			paddingLeft: '0 8px',
+		},
 	},
 	cells: {
-	  style: {
-		fontSize: '10px',
-		paddingLeft: '0 8px',
-	  },
+		style: {
+			fontSize: '10px',
+			paddingLeft: '0 8px',
+		},
 	},
-  };
+};
 
 const Table = () => {
-	const { data, error, loading } = useFetch(GET_NUTS_POP);  
+	const { data, error, loading } = useFetch(GET_NUTS_POP);
 
 	if (loading) return <Loader />;
 	if (error) return <Error message={error.toString()} />;

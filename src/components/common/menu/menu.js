@@ -25,7 +25,7 @@ const InterstatMenu = () => {
 	return (
 		<div className="menu-container">
 			<Box sx={{ flexGrow: 1 }}>
-				<AppBar position="static" style={{ backgroundColor: '#65b2c7'}}>
+				<AppBar position="static" style={{ backgroundColor: '#65b2c7' }}>
 					<Toolbar>
 						<IconButton
 							size="large"

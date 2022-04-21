@@ -1,3 +1,3 @@
 import { getEnv } from 'env';
 
-export const SEP = getEnv()['SEP_REPO_URL'];
+export const GF = getEnv()['GF_REPO_URL'];
