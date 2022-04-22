@@ -8,7 +8,7 @@ const Types = ({ listTypes = [], types, setTypes }) => {
 	useEffect(() => {
 		setTypes(
 			listTypes.reduce(
-				(acc, { value }) => [...acc, value],
+				(acc, { uri }) => [...acc, uri],
 
 				[]
 			)
@@ -32,14 +32,14 @@ const Types = ({ listTypes = [], types, setTypes }) => {
 		>
 			<FormLabel component="h3">Type of cultural facilities</FormLabel>
 			<FormGroup>
-				{listTypes.map(({ value, label }) => (
+				{listTypes.map(({ uri, label }) => (
 					<FormControlLabel
-						key={`type-${value}`}
+						key={`type-${uri}`}
 						control={
 							<Checkbox
-								checked={types.includes(value)}
-								onChange={() => handleChange(value)}
-								name={`type-${value}`}
+								checked={types.includes(uri)}
+								onChange={() => handleChange(uri)}
+								name={`type-${uri}`}
 							/>
 						}
 						label={label}

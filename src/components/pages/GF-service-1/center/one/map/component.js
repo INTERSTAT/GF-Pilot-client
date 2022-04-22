@@ -19,6 +19,7 @@ const Map = ({ points }) => (
 					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 				/>
 				{points.map(({ id, label, point }) => {
+					if (point.includes('None')) return null;
 					const { coordinates } = wktToGeoJSON(point);
 					const [lat, lon] = coordinates;
 					return (
