@@ -5,8 +5,8 @@ import Map from './component';
 import { useFetch } from 'api';
 import { GET_FACILITIES } from 'api/constants';
 
-const MapFetcher = () => {
-	const { data, loading, error } = useFetch(GET_FACILITIES);
+const MapFetcher = ({ types }) => {
+	const { data, loading, error } = useFetch(GET_FACILITIES, { types });
 	if (loading) return <Loader />;
 	if (error) return <Error message={error.toString()} />;
 	return <Map points={data} />;

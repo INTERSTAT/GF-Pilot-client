@@ -17,7 +17,7 @@ const One = ({ localization, setLocalization, types, setTypes }) => (
 			<Types types={types} setTypes={setTypes} />
 		</Grid>
 		<Grid item xs={8}>
-			<Map />
+			<Map types={types} />
 		</Grid>
 	</>
 );
