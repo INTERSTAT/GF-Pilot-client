@@ -1,4 +1,5 @@
 export const GET_CULTURAL_TYPES = 'GET_CULTURAL_TYPES';
+export const GET_FACILITIES = 'GET_FACILITIES';
 
 export const GET_NUTS_POP = 'GET_NUTS_POP';
 export const GET_NUTS_POP2 = 'GET_NUTS_POP2';
