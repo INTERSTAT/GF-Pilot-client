@@ -15,7 +15,7 @@ SELECT ?facility ?id ?label ?point WHERE {
     ?facility rdfs:label ?label .
     ?facility geo:hasGeometry ?geometry .
     ?geometry geo:asWKT ?point
-}`;
+} LIMIT 500`;
 
 const buildValues = (types) =>
 	`VALUES(?type) {${types.reduce((acc, t) => `${acc} (<${t}>)`, '')}}`;
