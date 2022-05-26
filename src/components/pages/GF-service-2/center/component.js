@@ -7,6 +7,7 @@ import Stack from '@mui/material/Stack';
 import Map from '../left/map';
 import Plots from './plots';
 
+
 const Center = () => (
 	<>
 		<div

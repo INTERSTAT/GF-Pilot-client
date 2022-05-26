@@ -5,11 +5,12 @@ import Map from './component';
 import { useFetch } from 'api';
 import { GET_FACILITIES } from 'api/constants';
 
-const MapFetcher = ({ types }) => {
-	const { data, loading, error } = useFetch(GET_FACILITIES, { types });
+const MapFetcher = ({ types, lauCode, country }) => {
+	const { data, loading, error } = useFetch(GET_FACILITIES, { types } , '', '', '', lauCode, '', 'false' );
 	if (loading) return <Loader />;
 	if (error) return <Error message={error.toString()} />;
-	return <Map points={data} />;
+	return <Map points={data} country={country}  />;
+
 };
 
 export default MapFetcher;

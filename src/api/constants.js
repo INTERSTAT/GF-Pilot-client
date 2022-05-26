@@ -1,5 +1,9 @@
 export const GET_CULTURAL_TYPES = 'GET_CULTURAL_TYPES';
 export const GET_FACILITIES = 'GET_FACILITIES';
-
 export const GET_NUTS_POP = 'GET_NUTS_POP';
 export const GET_NUTS_POP2 = 'GET_NUTS_POP2';
+export const GET_COUNTRIES = 'GET_COUNTRIES';
+export const GET_LAU_FROM_NUTS = 'GET_LAU_FROM_NUTS';
+export const NUTS = 'NUTS';
+export const GET_LAU_CODE_FROM_NAME = 'GET_LAU_CODE_FROM_NAME';
+export const GET_EVENTS = 'GET_EVENTS';

@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Grid from '@mui/material/Grid';
 import Left from './left';
 import Center from './center/component';
 import './service1.css';
 
-const Service1 = () => (
+const Service1 = () => {
+
+	return (
 	<Grid container spacing={2}>
 		<Grid item xs={2}>
 			<Left />
@@ -14,5 +16,5 @@ const Service1 = () => (
 		</Grid>
 	</Grid>
 );
-
+}
 export default Service1;

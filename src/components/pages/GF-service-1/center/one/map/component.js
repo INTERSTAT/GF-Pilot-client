@@ -6,7 +6,7 @@ import { wktToGeoJSON } from '@terraformer/wkt';
 
 const ROMA = [41.9027835, 12.4963655];
 
-const Map = ({ points }) => (
+const Map = ({ points, country }) => (
 	<div style={{ height: '100%', width: '100%' }}>
 		<div>
 			<MapContainer
@@ -19,13 +19,27 @@ const Map = ({ points }) => (
 					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 				/>
 				{points.map(({ id, label, point }) => {
+					
 					if (point.includes('None')) return null;
 					const { coordinates } = wktToGeoJSON(point);
-					const [lat, lon] = coordinates;
+
+					console.log("POSITION  : " + JSON.stringify(coordinates));
+					let coord;
+					let [lat, lon] = coordinates;
+					console.log(" ======= COUNTRY: " + country);
+
+					if(country==='FR'){
+						coord = [coordinates[1], coordinates[0]];
+						[lat, lon] = coord;
+						console.log("POSITION for FRENCH : " + JSON.stringify(coord));
+					} else {
+						coord = coordinates;
+					}
+
 					return (
 						<Marker
 							key={id}
-							position={coordinates}
+							position={coord}
 							icon={
 								new Icon({
 									iconUrl: markerIconPng,

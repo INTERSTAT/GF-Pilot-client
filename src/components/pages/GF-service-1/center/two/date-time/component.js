@@ -5,7 +5,7 @@ import Time from './time';
 const DateTime = ({ date, setDate, time, setTime }) => (
 	<>
 		<Calendar date={date} setDate={setDate} />
-		<Time time={time} setTime={setTime} />
+		{/* <Time time={time} setTime={setTime} /> */}
 	</>
 );
 
