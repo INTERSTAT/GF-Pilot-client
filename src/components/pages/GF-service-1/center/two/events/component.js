@@ -4,7 +4,7 @@ import { GET_EVENTS } from 'api/constants';
 import Title from 'components/common/title';
 
 const Events = ({ lau, date }) => {
-	return (
+	return ( 
 		<div
 			style={{
 				height: '100%',

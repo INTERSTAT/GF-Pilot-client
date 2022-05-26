@@ -1,5 +1,5 @@
 import { usePost, GF, SEP, MIBACT  } from '../utils';
-import { culturalTypes, getFacilities, countries, nuts,lauByNuts, events } from '../queries';
+import { culturalTypes, getFacilities, countries, nuts,lauByNuts, events, culturalFacilities } from '../queries';
 import { extractValues } from '../utils/transformers';
 import * as C from 'api/constants';
 
@@ -21,6 +21,8 @@ export const useFetch = (constant, options, country, lang, nuts3Code, lau, munic
 		case C.GET_EVENTS:
 			let dataSel = date.replace("\"","");
 			return usePost(MIBACT)(events({municipality: municipality, date: dataSel})); 
+		case C.GET_CULTURAL_FACILITIES:
+			return usePost(MIBACT)(culturalFacilities({ municipality: municipality })); 
 		// case C.GET_LAU_CODE_FROM_NAME:
 		// 	console.log("ARRIVO QUI")
 		// 	return usePost(SEP)(lauCodeFromName({municipality: lau})); 

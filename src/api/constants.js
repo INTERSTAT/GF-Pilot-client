@@ -7,3 +7,4 @@ export const GET_LAU_FROM_NUTS = 'GET_LAU_FROM_NUTS';
 export const NUTS = 'NUTS';
 export const GET_LAU_CODE_FROM_NAME = 'GET_LAU_CODE_FROM_NAME';
 export const GET_EVENTS = 'GET_EVENTS';
+export const GET_CULTURAL_FACILITIES = 'GET_CULTURAL_FACILITIES';

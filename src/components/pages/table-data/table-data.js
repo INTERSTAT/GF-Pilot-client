@@ -38,7 +38,14 @@ const customStyles = {
 
 const Table = ({ endpoint, municipality, date }) => {
 
-	const { data, error, loading } = useFetch(endpoint, [], '', '', '', '',  municipality , '', date.split('T')[0] );
+	let dateEvent ;
+	if(date!=null){
+		dateEvent = date.split('T')[0];
+	} else {
+		dateEvent = '';
+	}
+
+	const { data, error, loading } = useFetch(endpoint, [], '', '', '', '',  municipality , '', dateEvent );
 
 	if (loading) return <Loader />;
 	if (error) return <Error message={error.toString()} />;
