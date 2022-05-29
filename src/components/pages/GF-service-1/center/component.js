@@ -13,21 +13,23 @@ const Center = () => {
 	const [date, setDate] = useState(null);
 	const [time, setTime] = useState(null);
 
-	const [country, setCountry] = useState('0');
+	const [country, setCountry] = useState('IT');
 	const [nuts, setNuts] = useState('');
 	const [lau, setLau] = useState('');
-	const [lauCode, setLauCode] = useState('001272');
+	const [lauCode, setLauCode] = useState('');
+	const [checkedItalianSchools, setCheckedItalianSchools] = useState('');
+	const [checkedItalianFacilities, setCheckedItalianFacilities] = useState('');
 
 	return (
 		<Stack spacing={0.5} style={{ height: '100%', width: '100%' }}>
 			<div
 				style={{
 					height: '100%',
-					width: '100%',
+					width: '97%',
 					border: 'double',
 					borderRadius: '25px',
 					borderColor: '#65b2c7',
-					padding: '0.8rem',
+					padding: '0.6rem',
 				}}
 			>
 				<Grid container spacing={4}>
@@ -44,13 +46,19 @@ const Center = () => {
 						setLau={setLau} 
 						lauCode={lauCode} 
 						setLauCode={setLauCode} 
+						checkedItalianSchools={checkedItalianSchools}
+						setCheckedItalianSchools={setCheckedItalianSchools}
+						checkedItalianFacilities={checkedItalianFacilities}
+						setCheckedItalianFacilities={setCheckedItalianFacilities}
 					/>
 				</Grid>
+				{/* <label>checkedItalianSchools:{checkedItalianSchools}</label>
+				<label>checkedItalianFacilities:{checkedItalianFacilities}</label> */}
+				<Stack container spacing={1} style={{paddingTop: '3rem'}}>
+					<Two date={date} setDate={setDate} time={time} setTime={setTime} lau={lau} setLau={setLau} country={country} checkedItalianSchools={checkedItalianSchools}
+					   checkedItalianFacilities={checkedItalianFacilities} lauCode={lauCode}  />
 
-				<Grid container spacing={1}>
-					<Two date={date} setDate={setDate} time={time} setTime={setTime} lau={lau} country={country}  />
-
-				</Grid>
+				</Stack>
 			</div>
 		</Stack>
 	);

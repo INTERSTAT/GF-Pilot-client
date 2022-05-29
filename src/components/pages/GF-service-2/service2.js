@@ -11,11 +11,11 @@ const Service2 = () => (
 			<Title />
 		</Stack>
 
-		<Grid item xs={4}>
-			<Left />
+		<Grid item xs={2}>
+			{/* <Left /> */}
 		</Grid>
 
-        <Grid item xs={8}>
+        <Grid item xs={10}>
 			<Center />
 		</Grid>
 	</Grid>

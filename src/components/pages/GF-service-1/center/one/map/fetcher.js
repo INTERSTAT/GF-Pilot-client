@@ -9,6 +9,7 @@ const MapFetcher = ({ types, lauCode, country }) => {
 	const { data, loading, error } = useFetch(GET_FACILITIES, { types } , '', '', '', lauCode, '', 'false' );
 	if (loading) return <Loader />;
 	if (error) return <Error message={error.toString()} />;
+
 	return <Map points={data} country={country}  />;
 
 };

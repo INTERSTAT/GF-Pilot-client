@@ -30,14 +30,17 @@ const SelectData = ({
 			console.log(obj.label);
 			setLau(obj.label);
 			setLauCode(obj.code);
-			console.log(JSON.stringify(lauCode));
+			console.log(JSON.stringify("LAU CODE:" + lauCode));
 		}
 		if (endpoint === 'GET_COUNTRIES') {
 			setCountry(obj.label);
 			console.log(JSON.stringify(country));
 		}
 		if (endpoint === 'NUTS') {
-			setNuts(obj.label);
+			// setNuts(obj.label);
+			// console.log(JSON.stringify(nuts));
+
+			setNuts(obj.code);
 			console.log(JSON.stringify(nuts));
 		}
 	};

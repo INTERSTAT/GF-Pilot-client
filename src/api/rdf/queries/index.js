@@ -6,5 +6,6 @@ export { lauByNuts } from './lau-by-nuts';
 export { lauCodeFromName } from './lauCode-from-name';
 export { events } from './events';
 export { culturalFacilities } from './cultural-facilities';
-
-
+export { itEducationalFacilities } from './it-educational-facilities';
+export { schoolsFederateQuery } from './schools-federate-query';
+export { populationFromMunicipality } from './pop-municipality';

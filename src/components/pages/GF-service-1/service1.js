@@ -7,7 +7,7 @@ import './service1.css';
 const Service1 = () => {
 
 	return (
-	<Grid container spacing={2}>
+	<Grid container spacing={1}>
 		<Grid item xs={2}>
 			<Left />
 		</Grid>

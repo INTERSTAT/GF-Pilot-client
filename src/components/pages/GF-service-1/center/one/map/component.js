@@ -23,15 +23,13 @@ const Map = ({ points, country }) => (
 					if (point.includes('None')) return null;
 					const { coordinates } = wktToGeoJSON(point);
 
-					console.log("POSITION  : " + JSON.stringify(coordinates));
 					let coord;
 					let [lat, lon] = coordinates;
-					console.log(" ======= COUNTRY: " + country);
 
 					if(country==='FR'){
 						coord = [coordinates[1], coordinates[0]];
 						[lat, lon] = coord;
-						console.log("POSITION for FRENCH : " + JSON.stringify(coord));
+						//console.log("POSITION for FRENCH : " + JSON.stringify(coord));
 					} else {
 						coord = coordinates;
 					}

@@ -54,13 +54,12 @@ const Localization = ({
 					>
 						Select a NUTS3 Region
 					</label>
-
 					<SelectData
 						endpoint={NUTS}
 						country={country}
 						nuts={nuts}
 						setNuts={setNuts}
-					/>
+					/> 
 				</Grid>
 
 				<Grid item xs={6}>
