@@ -3,6 +3,7 @@
 	"version": "0.1.5",
 	"license": "MIT",
 	"description": "React client for GF Pilot",
+    "homepage": "https://interstat.eng.it/GF-pilot-client/",
 	"dependencies": {
 		"@emotion/react": "^11.7.1",
 		"@emotion/styled": "^11.6.0",
