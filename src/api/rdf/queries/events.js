@@ -10,13 +10,14 @@ prefix CLV:<https://w3id.org/italia/onto/CLV/>
 prefix geo:<http://www.w3.org/2003/01/geo/wgs84_pos#>
 prefix foaf:<http://xmlns.com/foaf/0.1/>
 
-SELECT ?municipality ?facility ?address ?event (xsd:Date(?DATA_INIZIO_EVENTO) as ?date)  {
+SELECT ?municipality ?facility ?address ?event (xsd:Date(?DATA_INIZIO_EVENTO) as ?start_date) (xsd:Date(?DATA_FINE_EVENTO) as ?end_date)  {
 
   ?x a cis:CulturalEvent
    ; rdfs:label ?event 
    ; cis:isHostedBySite ?site .
 
  ?x TI:atTime/TI:startTime ?DATA_INIZIO_EVENTO .
+ optional { ?x TI:atTime/TI:endTime ?DATA_FINE_EVENTO }
 
   ?site cis:siteAddress ?addressSite .
   ?addressSite clvapit:hasCity/rdfs:label ?municipality

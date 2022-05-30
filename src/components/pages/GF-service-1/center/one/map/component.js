@@ -18,7 +18,10 @@ const Map = ({ points, country }) => (
 					attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 				/>
+				
 				{points.map(({ id, label, point }) => {
+
+				console.log("POINTS: " + JSON.stringify(points));
 					
 					if (point.includes('None')) return null;
 					const { coordinates } = wktToGeoJSON(point);
@@ -55,7 +58,8 @@ const Map = ({ points, country }) => (
 							</Popup>
 						</Marker>
 					);
-				})}
+				})
+				}
 			</MapContainer>
 		</div>
 	</div>

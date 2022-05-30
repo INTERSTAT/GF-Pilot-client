@@ -9,7 +9,7 @@ import { sparqlDataToTable } from 'utils';
 const customStyles = {
 	rows: {
 		style: {
-			minHeight: '13px',
+			minHeight: '25px',
 			//backgroundColor: '#e0e0e0',
 		},
 	},
@@ -32,6 +32,7 @@ const customStyles = {
 		style: {
 			fontSize: '15px',
 			paddingLeft: '0 8px',
+			width: '450px'
 		},
 	},
 };
@@ -56,6 +57,8 @@ const Table = ({ endpoint, municipality, date, lau }) => {
 	return (
 
 		<DataTable
+			striped={true}
+			highlightOnHover={true}
 			columns={columns}
 			data={tableData}
 			customStyles={customStyles}

@@ -54,6 +54,9 @@ const Two = ({
 						</Paper>
 					</div>
 
+					<br />
+					<br />
+
 					{/* FACILITIES */}
 					<div
 						style={{
@@ -69,7 +72,10 @@ const Two = ({
 							<Table endpoint={GET_CULTURAL_FACILITIES} municipality={lau} />
 						</Paper>
 				
-					
+						
+					<br />
+					<br />
+
 						<Title label="Select a date and get all the Events in the Italian cultural facilities" />
 					<Grid container>
 						<Grid item xs={2}>
@@ -116,6 +122,9 @@ const Two = ({
 							/>
 						</Paper>
 					</div>
+
+					<br />
+					<br />
 
 					{/* FACILITIES */}
 					<div
@@ -169,6 +178,9 @@ const Two = ({
 						</Paper>
 					</div>
 
+					<br />
+					<br />
+
 					{/* FACILITIES */}
 					<div
 						style={{
@@ -193,6 +205,9 @@ const Two = ({
 						</Paper>
 					</div>
 
+					<br />
+					<br />
+					
 					<div
 						style={{
 							height: '50%',

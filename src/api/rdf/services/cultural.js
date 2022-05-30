@@ -9,7 +9,17 @@ export const useFetch = (constant, options, country, lang, nuts3Code, lau, munic
 			return extractValues(usePost(GF)(culturalTypes({country: country}))); 
 		case C.GET_FACILITIES:
 			console.log("LAU CHE ARRIVA: " + lau);
-			return extractValues(usePost(GF)(getFacilities( options )));
+			console.log("OPTIONS: " + JSON.stringify(options))
+			console.log("OPTIONS TYPES: " + options.types)
+
+			console.log("TYPES");
+			let typologies = "";
+			options.types.forEach((el)=>{
+				typologies += "(<" + el + ">) ";
+			})
+			console.log(" --------- typologies:")
+			console.log(typologies)
+			return extractValues(usePost(GF)(getFacilities( { typologies: typologies,  lau: lau  })));
 		case C.GET_COUNTRIES:
 			return usePost(SEP)(countries);
 		case C.NUTS:

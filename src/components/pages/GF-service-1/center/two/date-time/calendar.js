@@ -12,8 +12,9 @@ const Calendar = ({ date, setDate }) => {
 
 return (
 	<div style={{ marginBottom: '0.5em', paddingTop: '0.8em' }}>
-		<Typography component="h2">Enter the day of interest</Typography>
-		<DatePicker selected={date} onChange={handleChange} />
+		<Typography component="h1" style={{fontSize: '1.1em' }}>Enter the day of interest </Typography>
+		<Typography component="h5" style={{fontSize: '0.8em'  }}>Insert the Start Date of the event,from which to view the events up to the most recent date</Typography>
+		<DatePicker selected={date} onChange={handleChange} dateFormat={"dd/MM/yyyy"} />
 	</div>
 );
 };
