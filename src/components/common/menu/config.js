@@ -7,7 +7,7 @@ export const menuConfig = [
 	//{ label: 'Map - Fake data', route: C.MAP_FAKE_ROUTE, icon: <MapIcon /> },
 	//{ label: 'Table', route: C.TABLE_ROUTE, icon: <TableViewIcon /> },
 	{ label: 'GF Service 1', route: C.SERVICE2_ROUTE, icon: <MapIcon /> },
-	{ label: 'GF Service 2', route: C.SERVICE1_ROUTE, icon: <MapIcon /> },
+	// { label: 'GF Service 2', route: C.SERVICE1_ROUTE, icon: <MapIcon /> },
 	//{ label: 'GF Service 3', route: C.SERVICE3_ROUTE, icon: <MapIcon /> },
 	/*{
 		label: 'Table - Fake data',
