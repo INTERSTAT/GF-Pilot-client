@@ -10,7 +10,7 @@ const Left = () => (
 		<div style={{ marginBottom: '1em', fontWeight: 'bold' }}>
 			<Accordion
 				className="titleAcc"
-				title="A visitor wondering the nearest cultural facilities and events"
+				title="A citizen wondering the nearest cultural facilities and events"
 			>
 				<strong>{SERVICE_1_TITLE}</strong>
 			</Accordion>

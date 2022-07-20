@@ -13,7 +13,7 @@ const Center = () => {
 	const [date, setDate] = useState(null);
 	const [time, setTime] = useState(null);
 
-	const [country, setCountry] = useState('IT');
+	const [country, setCountry] = useState('');
 	const [nuts, setNuts] = useState('');
 	const [lau, setLau] = useState('');
 	const [lauCode, setLauCode] = useState('');
