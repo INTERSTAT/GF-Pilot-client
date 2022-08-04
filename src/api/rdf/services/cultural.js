@@ -1,4 +1,4 @@
-import { usePost, GF, SEP, MIBACT  } from '../utils';
+import { usePost, GF, SEP, MIBACT, S4Y  } from '../utils';
 import { culturalTypes, getFacilities, countries, nuts,lauByNuts, events, culturalFacilities, itEducationalFacilities, schoolsFederateQuery, populationFromMunicipality } from '../queries';
 import { extractValues } from '../utils/transformers';
 import * as C from 'api/constants';
@@ -21,7 +21,7 @@ export const useFetch = (constant, options, country, lang, nuts3Code, lau, munic
 			console.log(typologies)
 			return extractValues(usePost(GF)(getFacilities( { typologies: typologies,  lau: lau  })));
 		case C.GET_COUNTRIES:
-			return usePost(SEP)(countries);
+			return usePost(S4Y)(countries);
 		case C.NUTS:
 			return usePost(SEP)(nuts({countryToSelect: country})); 
 		case C.GET_LAU_FROM_NUTS:

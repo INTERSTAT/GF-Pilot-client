@@ -3,7 +3,7 @@
 	"version": "0.1.5",
 	"license": "MIT",
 	"description": "React client for GF Pilot",
-    "homepage": "https://interstat.eng.it/GF-pilot-client/",
+    "homepage": "https://interstat.eng.it/GF-pilot-client",
 	"dependencies": {
 		"@emotion/react": "^11.7.1",
 		"@emotion/styled": "^11.6.0",
@@ -34,6 +34,7 @@
 		"prestart": "generate-env-getter js",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
+		"build-clientGF": "PUBLIC_URL=https://interstat.eng.it/GF-pilot-client react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
 	},
