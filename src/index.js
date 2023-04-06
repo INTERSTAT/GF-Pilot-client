@@ -10,8 +10,8 @@ const muiTheme = createTheme();
 ReactDOM.render(
 	<React.StrictMode>
 		<ThemeProvider theme={muiTheme}>
-			{/* <RouterProvider basename="/GF-pilot-client"> */}
-			<RouterProvider >
+			<RouterProvider basename="/GF-pilot-client">
+			{/* <RouterProvider > */}
 				<App />
 			</RouterProvider>
 		</ThemeProvider>

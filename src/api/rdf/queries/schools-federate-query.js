@@ -24,7 +24,7 @@ SELECT DISTINCT (?Comune as ?municipality) (?lau as ?lau_code) (?id as ?school_i
     FILTER(xsd:string(?lau) = '` + lauCode + `')
     FILTER( str(?id) = str(?codiceS))
     
-   SERVICE <https://interstat.eng.it/graphdb/repositories/sep-test> {
+   SERVICE <https://framework.cef-interstat.eu/graphdb/repositories/sep-test> {
       GRAPH <https://dati.istruzione.it/EDIANAGRAFESTA> {
           		?S miur:ANNOSCOLASTICO ?Anno. 
         		?S miur:CODICESCUOLA  ?codiceS .
